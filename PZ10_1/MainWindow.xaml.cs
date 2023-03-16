@@ -25,12 +25,5 @@ namespace PZ10_1
         {
             InitializeComponent();
         }
-
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            RadioButton pressed = (RadioButton)sender;
-            this.inkCanvas1.DefaultDrawingAttributes.Height = Convert.ToDouble(pressed.Content);
-            this.inkCanvas1.DefaultDrawingAttributes.Width = Convert.ToDouble(pressed.Content);
-        }
     }
 }
