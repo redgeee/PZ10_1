@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace PZ10_1
 {
@@ -23,6 +24,13 @@ namespace PZ10_1
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton pressed = (RadioButton)sender;
+            this.inkCanvas1.DefaultDrawingAttributes.Height = Convert.ToDouble(pressed.Content);
+            this.inkCanvas1.DefaultDrawingAttributes.Width = Convert.ToDouble(pressed.Content);
         }
     }
 }

@@ -5,8 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PZ10_1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="350" Width="545">
+    <Grid Margin="0,0,0,-6">
+        <StackPanel HorizontalAlignment="Left" Orientation="Vertical">
+            <Label Content="Последние документы"/>
+            <Label Content="1.txt"/>
+            <Label Content="2.txt"/>
+            <Label Content="3.txt"/>
+            <Label Content="4.txt"/>
+            <Label Content="5.txt"/>
+            <Label Content="6.txt"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="150,5,0,0">
+            <Button Content="Открыть" Margin="5"/>
+            <Button Content="Сохранить" Margin="5"/>
+            <Button Content="Закрыть" Margin="5"/>
+            <Button Content="Обработать" Margin="5"/>
+            <Button Content="О программе" Margin="5"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="150,40,0,0">
+            <Label Content="1.txt" FontWeight="Bold"/>
+            <Label Content="2.txt"/>
+            <Label Content="3.txt"/>
+        </StackPanel>
+        <WrapPanel Margin="150,70,10,0">
+            <Button Content="A" Background="Yellow" Width="60" Height="60" BorderBrush="{x:Null}" Foreground="Black"/>
+            <Button Content="B" Background="Red" Width="60" Height="60" BorderBrush="{x:Null}" Foreground="Black"/>
+            <Button Content="C" Background="Green" Width="60" Height="60" BorderBrush="{x:Null}" Foreground="Black"/>
+            <Button Content="D" Background="Blue" Width="60" Height="60" BorderBrush="{x:Null}" Foreground="Black"/>
+            <Button Content="E" Background="Gray" Width="60" Height="60" BorderBrush="{x:Null}" Foreground="Black"/>
+            <Button Content="F" Background="Beige" Width="60" Height="60" BorderBrush="{x:Null}" Foreground="Black"/>
+        </WrapPanel>
+        <InkCanvas x:Name="inkCanvas1" HorizontalAlignment="Left" Height="132" Margin="150,190,0,0" VerticalAlignment="Top" Width="251" Background="#FFD4D4D4">
+        </InkCanvas>
+        <StackPanel Margin="406,217,0,0">
+            <RadioButton Content="2" Checked="RadioButton_Checked"/>
+            <RadioButton Content="5" Checked="RadioButton_Checked"/>
+            <RadioButton Content="10" Checked="RadioButton_Checked"/>
+            <RadioButton Content="15" Checked="RadioButton_Checked"/>
+            <RadioButton Content="20" Checked="RadioButton_Checked"/>
+        </StackPanel>
+
     </Grid>
 </Window>
